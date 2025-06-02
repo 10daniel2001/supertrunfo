@@ -2,7 +2,7 @@
 
 int main() {
     // variaveis da carta 01
-    char estado01[15];
+    char estado01[15];//Ultilizando ate 14 caracter
     char codigo01[5];
     char nomecidade01[50];
     int populacao01;
