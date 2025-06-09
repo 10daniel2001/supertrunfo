@@ -1,75 +1,89 @@
 #include <stdio.h>
+int main(){
+//variaveis da carta 01
+    char estado01[3]; // um unico caracter
+    char codigo01[5]; //Codigo ex A - H
+    char nomecidade01[50];// nome da cidade 49 carater 
+    int popualcao01;// populcao em numeros inteiros 
+    float area01; // area em metros quadrados 
+    float pib01; //Pib variavel float ultilizacao de numeros 
+    int ponto_turisticos01; // numeros inteiros 
 
-int main() {
-    // variaveis da carta 01
-    char estado01[15];//Ultilizando ate 14 caracter
-    char codigo01[5];
-    char nomecidade01[50];
-    int populacao01;
-    float areao01;
-    float pib01;
-    int pontosturisticos01;
+// variaveis da carta 02
 
-    // variaveis da carta 02
-    char estado02[15];
-    char codigo02[5];
-    char nomecidade02[50];
-    int populacao02;
-    float areao02;
-    float pib02;
-    int pontosturisticos02;
+     
+    char estado02[3]; // um unico caracter
+    char codigo02[5]; //Codigo ex A - H
+    char nomecidade02[50];// nome da cidade 49 carater 
+    int popualcao02;// populcao em numeros inteiros 
+    float area02; // area em metros quadrados 
+    float pib02; //Pib variavel float ultilizacao de numeros 
+    int ponto_turisticos02; // numeros inteiros 
 
-    printf("Preencha os dados da carta 01:\n");
+// entrada e saida de dados ultilizando printf e scanf
 
-    printf("Estado (letra de A a H): \n");
-    scanf(" %14s", estado01);
-    printf("Codigo ex: G01 \n");
-    scanf(" %4s", codigo01);
-    printf("Nome da cidade: \n");
-    scanf(" %49s", nomecidade01);
-    printf("Populacao: \n");
-    scanf("%d", &populacao01);
-    printf("Area em km²: \n");
-    scanf("%f", &areao01);
-    printf("PIB em numeros: \n");
+    printf("****DIGITE OS DADOS DA PRIMEIRA CARTA***** \n");
+    printf("ESTADO: de A a H \n");// saida de dados printf
+    scanf("%s", estado01); // entrada de dados scanf
+    printf("CODIGO: ex G01 \n");
+    scanf("%s", codigo01);
+    printf("CIDADE: \n");
+    scanf("%s", nomecidade01);
+    printf("POPULACAO: \n");
+    scanf("%d", &popualcao01);
+    printf("AREA: em km² \n");
+    scanf("%f", &area01);
+    printf("PIB: \n");
     scanf("%f", &pib01);
-    printf("Pontos turisticos: \n");
-    scanf("%d", &pontosturisticos01);
+    printf("PONTOS TURISTICOS: \n");
+    scanf("%d", &ponto_turisticos01);
 
-    printf("\nPreencha os dados da carta 02:\n");
+    printf("\n");
+// entrada e saida de dados da segunda carta 
+// printf e scanf %especificadores de formatos 
 
-    printf("Estado (letra de A a H): \n");
-    scanf(" %14s", estado02);
-    printf("Codigo ex: G01 \n");
-    scanf(" %4s", codigo02);
-    printf("Nome da cidade: \n");
-    scanf(" %49s", nomecidade02);
-    printf("Populacao: \n");
-    scanf("%d", &populacao02);
-    printf("Area em km²: \n");
-    scanf("%f", &areao02);
-    printf("PIB em numeros: \n");
+    printf("****DIGITE OS DADOS DA SEGUNDA CARTA***** \n");
+    printf("ESTADO: de A a H \n");// saida de dados printf
+    scanf(" %s", estado02); // entrada de dados scanf
+    printf("CODIGO: ex G01 \n");
+    scanf("%s", codigo02);
+    printf("CIDADE: \n");
+    scanf("%s", nomecidade02);
+    printf("POPULACAO: \n");
+    scanf("%d", &popualcao02);
+    printf("AREA: em km² \n");
+    scanf("%f", &area02);
+    printf("PIB: \n");
     scanf("%f", &pib02);
-    printf("Pontos turisticos: \n");
-    scanf("%d", &pontosturisticos02);
+    printf("PONTOS TURISTICOS: \n");
+    scanf("%d", &ponto_turisticos02);
 
-    printf("\n--- Carta 01 ---\n");
-    printf("Estado: %s\n", estado01);
-    printf("Codigo: %s\n", codigo01);
-    printf("Cidade: %s\n", nomecidade01);
-    printf("Populacao: %d\n", populacao01);
-    printf("Area: %.2f km²\n", areao01);
-    printf("PIB: %.2f\n", pib01);
-    printf("Pontos turisticos: %d\n", pontosturisticos01);
+// saida de dados das carta ja preenchida usando printf 
+// dados da primeira carta 
+     printf("+++ESSE SAO OS DADOS DA PRIMEIRA CARTA PREENCHIDO++++\n");
+     printf("ESTADO: %s\n", estado01);
+     printf("CODIGO: %s\n", codigo01);
+     printf("CIDADE: %s\n", nomecidade01);
+     printf("POPULACAO: %d\n", popualcao01);
+     printf("AREA EM KM²: %.2f\n", area01);
+     printf("PIB: %.2f\n", pib01);
+     printf("PONTOS TURISTICOS: %d\n", ponto_turisticos01);
 
-    printf("\n--- Carta 02 ---\n");
-    printf("Estado: %s\n", estado02);
-    printf("Codigo: %s\n", codigo02);
-    printf("Cidade: %s\n", nomecidade02);
-    printf("Populacao: %d\n", populacao02);
-    printf("Area: %.2f km²\n", areao02);
-    printf("PIB: %.2f\n", pib02);
-    printf("Pontos turisticos: %d\n", pontosturisticos02);
+     printf("\n");
 
-    return 0;
+// saida de dados das carta ja preenchida usando printf 
+// dados da segunda carta 
+     printf("+++ESSE SAO OS DADOS DA PRIMEIRA CARTA PREENCHIDO++++\n");
+     printf("ESTADO: %s\n", estado02);
+     printf("CODIGO: %s\n", codigo02);
+     printf("CIDADE: %s\n", nomecidade02);
+     printf("POPULACAO: %d\n", popualcao02);
+     printf("AREA EM KM²: %.2f\n", area02);
+     printf("PIB: %.2f\n", pib02);
+     printf("PONTOS TURISTICOS: %d\n", ponto_turisticos02);
+
+//finalisando criacao de duas carta do jogo super trunfo em c//
+
+
+return 0;
 }
